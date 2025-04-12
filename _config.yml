@@ -60,8 +60,8 @@ title: About
 permalink: /about/
 ---
 
-FEAScript is a lightweight finite element simulation library developed in JavaScript. It allows users to create and run client-side, browser-based simulations for physics and engineering problems without requiring additional installations.
-
-Our goal is to democratize finite element analysis by making simulation capabilities accessible to everyone, everywhere.
-
-Visit the [main website](https://feascript.com) or check out our [GitHub repository](https://github.com/FEAScript/FEAScript-core).
+#FEAScript is a lightweight finite element simulation library developed in JavaScript. It allows users to create and run client-side, browser-based simulations for physics and engineering problems without requiring additional installations.
+#
+#Our goal is to democratize finite element analysis by making simulation capabilities accessible to everyone, everywhere.
+#
+#Visit the [main website](https://feascript.com) or check out our [GitHub repository](https://github.com/FEAScript/FEAScript-core).
