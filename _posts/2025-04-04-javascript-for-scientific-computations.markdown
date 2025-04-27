@@ -24,7 +24,7 @@ We cannot deny that JavaScript lacks the extensive scientific ecosystem of C++ o
 - **[ndarray](https://github.com/scijs/ndarray)** and **[scijs](https://github.com/scijs)** ecosystem: A collection of libraries focused on multidimensional arrays and scientific computing.
 - **[numbers.js](https://github.com/numbers/numbers.js)**: A library for basic numerical methods, such as root finding and integration.
 - **[Scribbler](https://scribbler.live/)**: A notebook tool with several preloaded scientific libraries.
-- **[FEAScript](https://feascript.com/)**: A finite element simulation library that we are developing, with a focus on simplicity and zero-install usage.
+- **[FEAScript](https://feascript.com/)**: The finite element simulation library that we are developing, with a focus on simplicity and zero-install usage.
 
 ## WebAssembly (Wasm) Considerations
 
