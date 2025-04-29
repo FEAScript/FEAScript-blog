@@ -2,6 +2,8 @@
 
 ## FEAScript-blog
 
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fblog.feascript.com%2F&label=blog)
+
 FEAScript is a lightweight finite element simulation library built in JavaScript. This is the source code of the FEAScript <a href="https://blog.feascript.com/" target="_blank">blog</a>.
 
 ## License
