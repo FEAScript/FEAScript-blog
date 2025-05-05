@@ -28,13 +28,12 @@ description: >-
 baseurl: ""
 url: "https://blog.feascript.com"
 #twitter_username: jekyllrb
-github_username:  FEAScript
+github_username: FEAScript
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -54,15 +53,3 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
----
-layout: page
-title: About
-permalink: /about/
----
-
-#FEAScript is a lightweight finite element simulation library developed in JavaScript. It allows users to create and run client-side, browser-based simulations for physics and engineering problems without requiring additional installations.
-#
-#Our goal is to democratize finite element analysis by making simulation capabilities accessible to everyone, everywhere.
-#
-#Visit the [main website](https://feascript.com) or check out our [GitHub repository](https://github.com/FEAScript/FEAScript-core).

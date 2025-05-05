@@ -23,7 +23,7 @@ Bu &= g \quad \text{on} \quad \partial D.
 \end{eqnarray} \tag{1}
 $$
 
-The solution \\(u\\) is a function of the position vector \\(\bar{x}\\) at the domain \\(D\\), which is a subregion of a one-, two-, or three-dimensional Euclidean space. The position vector \\(\bar{x}\\) is defined as: \\( \bar{x} = \sum_{i=1}^{n} x_i e_i \\), where \\(e_i\\) are the unit vectors and \\(n\\) is the dimension of the Euclidean space. \\(L\\) is the differential operator and \\(B\\) is a boundary operator defined at the boundary \\(\partial D\\). The solution \\(u\\) can be approximated using a linear combination of basis functions \\(\phi^1, \phi^2, \phi^3, \dots, \phi^N\\) such that: \\( u(x) = \sum_{j=1}^{N} u_j \phi^j(x) \\), where the number of basis functions equals the number of nodes of the computational mesh.
+The solution \\(u\\) is a function of the position vector \\(\bar{x}\\) at the domain \\(D\\), which is a subregion of a one-, two-, or three-dimensional Euclidean space. The position vector \\(\bar{x}\\) is defined as: \\( \bar{x} = \sum*{i=1}^{n} x_i e_i \\), where \\(e_i\\) are the unit vectors and \\(n\\) is the dimension of the Euclidean space. \\(L\\) is the differential operator and \\(B\\) is a boundary operator defined at the boundary \\(\partial D\\). The solution \\(u\\) can be approximated using a linear combination of basis functions \\(\phi^1, \phi^2, \phi^3, \dots, \phi^N\\) such that: \\( u(x) = \sum*{j=1}^{N} u_j \phi^j(x) \\), where the number of basis functions equals the number of nodes of the computational mesh.
 
 The Galerkin method seeks a solution that zeroes out every one of the following weighted residuals:
 
@@ -49,11 +49,11 @@ $$I_m = \int_{D} \phi^i \frac{d^m u}{dx^m} \, dx. \tag{3}$$
 
 By applying integration by parts, we get:
 
-$$ I_m = \oint_{\partial D} \phi^i \frac{d^{m-1} u}{dx^{m-1}} \, dt - \int_{D} \frac{d\phi^i}{dx} \frac{d^{m-1} u}{dx^{m-1}} \, dx, \tag{4}$$
+$$ I*m = \oint*{\partial D} \phi^i \frac{d^{m-1} u}{dx^{m-1}} \, dt - \int\_{D} \frac{d\phi^i}{dx} \frac{d^{m-1} u}{dx^{m-1}} \, dx, \tag{4}$$
 
 where \\(t\\) is the independent variable at the boundary \\(\partial D\\). A boundary condition of \\(m-1\\) rank is imposed at the line integral. Thus, in the case where the Neumann boundary condition is \\( \frac{d^{m-1}u}{dx^{m-1}} = g(t) \\) on \\(\partial D\\), where \\(g(t)\\) is a known function, then:
 
-$$ I_m = \oint_{\partial D} \phi^i g(t) \, dt - \int_{D} \frac{d\phi^i}{dx} \frac{d^{m-1} u}{dx^{m-1}} \, dx. \tag{5}$$
+$$ I*m = \oint*{\partial D} \phi^i g(t) \, dt - \int\_{D} \frac{d\phi^i}{dx} \frac{d^{m-1} u}{dx^{m-1}} \, dx. \tag{5}$$
 
 If the Neumann boundary condition has a rank \\(k < (m-1)\\), then we continue to apply integration by parts until the \\(k\\)-th rank derivative appears on the line integral.
 
@@ -71,9 +71,9 @@ From the above mapping, we can define the reverse mapping from \\(\bar{x}\\) to 
 
 In the case where \\(D\\) is a two-dimensional domain, the Jacobian of the mapping is the matrix:
 
-$$ \bar{\bar{J}} = \begin{vmatrix} x_{\xi} & y_{\xi} \\ x_{\eta} & y_{\eta} \end{vmatrix}, \tag{7}$$
+$$ \bar{\bar{J}} = \begin{vmatrix} x*{\xi} & y*{\xi} \\ x*{\eta} & y*{\eta} \end{vmatrix}, \tag{7}$$
 
-where \\( x_{\xi} = \frac{\partial x}{\partial \xi}\\), \\( y_{\xi} = \frac{\partial y}{\partial \xi}\\), \\( x_{\eta} = \frac{\partial x}{\partial \eta}\\), \\( y_{\eta} = \frac{\partial y}{\partial \eta}\\). The relation between the \\(\bar{x}\\)- and \\(\bar{\xi}\\)-partial derivatives of the basis function can also be calculated as:
+where \\( x*{\xi} = \frac{\partial x}{\partial \xi}\\), \\( y*{\xi} = \frac{\partial y}{\partial \xi}\\), \\( x*{\eta} = \frac{\partial x}{\partial \eta}\\), \\( y*{\eta} = \frac{\partial y}{\partial \eta}\\). The relation between the \\(\bar{x}\\)- and \\(\bar{\xi}\\)-partial derivatives of the basis function can also be calculated as:
 
 $$ \bar{\bar{J}} \begin{vmatrix} \frac{\partial \phi_i}{\partial x} \\ \frac{\partial \phi_i}{\partial y} \end{vmatrix} = \begin{vmatrix} \frac{\partial \phi_i}{\partial \xi} \\ \frac{\partial \phi_i}{\partial \eta} \end{vmatrix}. \tag{8} $$
 
@@ -86,15 +86,15 @@ $$
 \end{eqnarray} \tag{9}
 $$
 
-where \\(\text{det}\bar{\bar{J}}\\) is the determinant of the Jacobian: \\( \text{det}\bar{\bar{J}} = x_{\xi} y_{\eta} - x_{\eta} y_{\xi}\\). In the case where \\(D\\) is a one-dimensional domain, Eq. (6) is reduced to: \\( x = \sum_{i=1}^{n_k} x_i \phi_i(\xi) \\). The Jacobian of the mapping in this case is: \\( J = \frac{dx}{d\xi} = x_{\xi} \\), and the partial derivative of the basis function is: \\( \frac{d\phi_i}{dx} = \frac{d\phi_i}{d\xi} \Big/ x_{\xi} \\).
+where \\(\text{det}\bar{\bar{J}}\\) is the determinant of the Jacobian: \\( \text{det}\bar{\bar{J}} = x*{\xi} y*{\eta} - x*{\eta} y*{\xi}\\). In the case where \\(D\\) is a one-dimensional domain, Eq. (6) is reduced to: \\( x = \sum*{i=1}^{n_k} x_i \phi_i(\xi) \\). The Jacobian of the mapping in this case is: \\( J = \frac{dx}{d\xi} = x*{\xi} \\), and the partial derivative of the basis function is: \\( \frac{d\phi*i}{dx} = \frac{d\phi_i}{d\xi} \Big/ x*{\xi} \\).
 
 ## Residuals Computation
 
 A typical representative of the integrals in the Galerkin residuals is the following:
 
-$$ I_{ij} = \int_{D} \phi^i L \phi^j \, d\bar{x}. \tag{10} $$
+$$ I*{ij} = \int*{D} \phi^i L \phi^j \, d\bar{x}. \tag{10} $$
 
-The computational mesh covering \\(D\\) consists of \\(NE\\) finite elements \\(E_k\\) \\((k = 1, 2, \dots, NE)\\). Thus, the integral \\(I_{ij}\\) is the sum of the partial integrals:
+The computational mesh covering \\(D\\) consists of \\(NE\\) finite elements \\(E*k\\) \\((k = 1, 2, \dots, NE)\\). Thus, the integral \\(I*{ij}\\) is the sum of the partial integrals:
 
 $$
 \begin{aligned}
@@ -103,15 +103,15 @@ I_{ij}^k &\equiv \int_{E_k} \phi^i L \phi^j \, d\bar{x}.
 \end{aligned} \tag{11}
 $$
 
-Each of the integrals \\(I_{ij}^k\\) is calculated through the isoparametric mapping by transforming the coordinate system as follows:
+Each of the integrals \\(I\_{ij}^k\\) is calculated through the isoparametric mapping by transforming the coordinate system as follows:
 
-$$ I_{ij}^k = \int_{E_0} \phi_i(\bar{\xi}) L_{\bar{\xi}} \phi_j(\bar{\xi}) \, \text{det}(\bar{\bar{J}}) \, d\bar{\xi}, \tag{12} $$
+$$ I*{ij}^k = \int*{E*0} \phi_i(\bar{\xi}) L*{\bar{\xi}} \phi_j(\bar{\xi}) \, \text{det}(\bar{\bar{J}}) \, d\bar{\xi}, \tag{12} $$
 
-where \\(E_0\\) is the reference element, and \\(L_{\bar{\xi}}\\) is the differential operator expressed in the \\(\bar{\xi}\\)-coordinate system. The integrals of the discretization equations are then calculated numerically on the reference element. Specifically, these calculations are performed using the Gauss quadrature method:
+where \\(E*0\\) is the reference element, and \\(L*{\bar{\xi}}\\) is the differential operator expressed in the \\(\bar{\xi}\\)-coordinate system. The integrals of the discretization equations are then calculated numerically on the reference element. Specifically, these calculations are performed using the Gauss quadrature method:
 
-$$ \int_{E_0} f(\bar{\xi}) \, d\bar{\xi} = \sum_{k=1}^{NGP} w_k f(\bar{\xi}_{gk}), \tag{13} $$
+$$ \int*{E_0} f(\bar{\xi}) \, d\bar{\xi} = \sum*{k=1}^{NGP} w*k f(\bar{\xi}*{gk}), \tag{13} $$
 
-where \\(w_k\\) are the Gauss weights, \\(\bar{\xi}_{gk}\\) are the Gauss points inside the reference element where the integrand is evaluated, and \\(NGP\\) is the number of Gauss points.
+where \\(w*k\\) are the Gauss weights, \\(\bar{\xi}*{gk}\\) are the Gauss points inside the reference element where the integrand is evaluated, and \\(NGP\\) is the number of Gauss points.
 
 ## References
 
