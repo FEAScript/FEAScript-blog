@@ -2,8 +2,8 @@
 layout: post
 title: "Finite Element Method Notes"
 date: 2023-12-01
-categories: [Numerical Methods, FEM]
-tags: [FEAScript, FEM, Galerkin, Numerical Methods, Tutorial]
+categories: [Tutorial]
+tags: [FEAScript, FEM, Galerkin, Numerical Methods, JavaScript]
 mathjax: true
 ---
 
@@ -11,6 +11,8 @@ mathjax: true
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 The finite element method is a discretization technique that can utilize a computational mesh to approximate the solution of a partial differential equation. Basic concepts of the finite element method are described below.
+
+---
 
 ## Galerkin Residuals
 
@@ -37,6 +39,8 @@ $$
 
 These integrals depend solely on the nodal values \\(u_j\\), which are the unknowns to be determined. The number of residuals is equal to the number of basis functions, which in turn is equal to the number of nodes, \\(N\\), in the computational mesh. Setting the Galerkin residuals to zero leads to a system of \\(N\\) algebraic equations with \\(N\\) unknowns, which can be solved to obtain the approximate solution.
 
+---
+
 ## Boundary Conditions
 
 In general, there are three common types of boundary conditions that can be imposed in boundary value problems: Dirichlet, Neumann, and Robin boundary conditions. The boundary conditions that specify the value of \\(u\\) on a portion of \\(\partial D\\) are called Dirichlet boundary conditions, and they are imposed directly in the discretization equations. In particular, the Dirichlet boundary conditions replace the Galerkin residuals at the computational nodes that lie on the portion of the boundary where the solution value is prescribed.
@@ -58,6 +62,8 @@ $$ I_m = \oint_{\partial D} \phi^i g(t) \, dt - \int_{D} \frac{d\phi^i}{dx} \fra
 If the Neumann boundary condition has a rank \\(k < (m-1)\\), then we continue to apply integration by parts until the \\(k\\)-th rank derivative appears on the line integral.
 
 Finally, Robin boundary conditions, also known as mixed boundary conditions, specify a linear combination of the function \\(u\\) and its derivative on a portion of \\(\partial D\\). These are imposed in a similar fashion to the Neumann boundary conditions.
+
+---
 
 ## Isoparametric Mapping
 
@@ -88,6 +94,8 @@ $$
 
 where \\(\text{det}\bar{\bar{J}}\\) is the determinant of the Jacobian: \\( \text{det}\bar{\bar{J}} = x_{\xi} y_{\eta} - x_{\eta} y_{\xi}\\). In the case where \\(D\\) is a one-dimensional domain, Eq. (6) is reduced to: \\( x = \sum_{i=1}^{n_k} x_i \phi_i(\xi) \\). The Jacobian of the mapping in this case is: \\( J = \frac{dx}{d\xi} = x_{\xi} \\), and the partial derivative of the basis function is: \\( \frac{d\phi_i}{dx} = \frac{d\phi_i}{d\xi} \Big/ x_{\xi} \\).
 
+---
+
 ## Residuals Computation
 
 A typical representative of the integrals in the Galerkin residuals is the following:
@@ -113,7 +121,9 @@ $$ \int_{E_0} f(\bar{\xi}) \, d\bar{\xi} = \sum_{k=1}^{NGP} w_k f(\bar{\xi}_{gk}
 
 where \\(w_k\\) are the Gauss weights, \\(\bar{\xi}_{gk}\\) are the Gauss points inside the reference element where the integrand is evaluated, and \\(NGP\\) is the number of Gauss points.
 
+---
+
 ## References
 
-- A. G. Boudouvis "Computational Analysis with the Finite Element Method", Lecture Notes, National Technical University of Athens, Athens, 1992 (In Greek)
-- O. C. Zienkiewicz "The Finite Element Method", 3rd edition, McGraw-Hill, London, 1977
+- A. G. Boudouvis. "Computational Analysis with the Finite Element Method." Lecture Notes, National Technical University of Athens, Athens, 1992.
+- O. C. Zienkiewicz. "The Finite Element Method." 3rd edition, McGraw-Hill, London, 1977.
