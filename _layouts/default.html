@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>{% if page.url == "/" %}{{ site.title }}{% else %}{{ site.title }}: {{ page.title }}{% endif %}</title>
-  <link href="https://feascript.com/FEAScript-website.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/x-icon" href="https://feascript.com/assets/favicon.ico" />
   {%- include head.html -%}
 
@@ -18,6 +17,10 @@
 
     gtag("config", "G-1JPK0KLEC9");
   </script>
+  <style>
+    /* Hide RSS subscribe line */
+    .rss-subscribe { display: none; }
+  </style>
 </head>
 
 <body>
@@ -30,7 +33,7 @@
     </div>
   </main>
 
-  <footer class="site-footer h-card">
+  <footer class="site-footer h-card" style="background-color: #f7e7b7;">
     <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
     <div class="wrapper">
@@ -59,7 +62,7 @@
 
         <div class="footer-col footer-col-3">
           <p>
-            <a href="https://feascript.com/" target="_blank">
+            <a href="https://feascript.com/">
               <img src="https://feascript.github.io/FEAScript-website/assets/FEAScriptLogo.png" alt="FEAScript Logo" class="footer-logo" style="width: 40px; height: auto;">
             </a>
           </p>

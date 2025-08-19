@@ -40,7 +40,7 @@ This example highlights how a seemingly abstract PDE translates directly into a 
 
 ---
 
-## Conclusion
+## Conclusions
 
 The eikonal equation provides a unifying framework for understanding wavefront propagation across physics and engineering: from geometrical optics (Hamilton's original motivation), to seismology, acoustics, and solidification dynamics.  
 

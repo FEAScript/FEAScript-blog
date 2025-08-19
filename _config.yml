@@ -27,8 +27,8 @@ description: >-
   for physics and engineering problems.
 baseurl: ""
 url: "https://blog.feascript.com"
-#twitter_username: jekyllrb
 github_username: FEAScript
+youtube_username: "@FEAScript"
 
 # Build settings
 theme: minima
