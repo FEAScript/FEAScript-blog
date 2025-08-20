@@ -34,7 +34,7 @@ where the small parameter \\(\varepsilon\\) enforces smoothness. As \\(\varepsil
 
 ## Implementation with FEAScript
 
-As a demonstration, consider the [solidification front propagation example](https://feascript.com/tutorials/SolidificationFront2D.html). Here, the eikonal equation governs the motion of a solidification interface during processes such as metal cooling. The interface propagates with a speed determined by the material properties (described by the slowness field \\(f(\mathbf{x})\\)). By solving the eikonal equation numerically with vanishing viscosity in FEAScript, we can visualize how the interface evolves over time.
+As a demonstration, consider the [solidification front propagation example](https://feascript.com/tutorials/SolidificationFront2D.html). Here, the eikonal equation governs the motion of a solidification interface during processes such as metal cooling. The interface propagates with a speed determined by the material properties (described by the slowness field \\(f(\mathbf{x})\\)). By solving the eikonal equation numerically with vanishing viscosity in FEAScript, we can visualize how the interface evolves over time. For improved browser performance, you can also try the [web worker implementation](https://feascript.com/tutorials/SolidificationFront2DWorker.html) which performs the calculations in a separate thread.
 
 This example highlights how a seemingly abstract PDE translates directly into a materials science application, showing FEAScript's versatility for modeling complex physical processes in JavaScript.
 
@@ -42,7 +42,7 @@ This example highlights how a seemingly abstract PDE translates directly into a 
 
 ## Conclusions
 
-The eikonal equation provides a unifying framework for understanding wavefront propagation across physics and engineering: from geometrical optics (Hamilton's original motivation), to seismology, acoustics, and solidification dynamics.  
+The eikonal equation provides a unifying framework for understanding wavefront propagation across physics and engineering: from geometrical optics (Hamilton's original motivation), to seismology, acoustics, and solidification dynamics.
 
 Eikonal's nonlinear nature and its inherent presence of singularities make, however, closed-form analytical solutions rare and numerical treatment challenging. Through the <i>Vanishing Viscosity Method</i> implemented in FEAScript, we gain a robust way to approximate viscosity solutions of the eikonal equation in a JavaScript environment. This demonstrates how modern numerical methods can be embedded directly in accessible, browser-based platforms, lowering the barrier to experimenting with PDEs that once required specialized scientific computing software.
 
