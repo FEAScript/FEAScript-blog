@@ -12,7 +12,7 @@ mathjax: true
 
 ## Introduction to the Eikonal Equation
 
-The eikonal equation is a nonlinear first-order partial differential equation (PDE) that describes how wavefronts propagate through a medium. Its origins go back to the 19th century, when Sir William Rowan Hamilton developed a new framework for geometrical optics. Hamilton introduced the concept of a <i>point characteristic function</i>[^1] which represents the optical path length of a ray between two points on chosen surfaces. These functions are direct precursors to what would later be termed as eikonal by Ernst Heinrich Bruns (1895). Today, the eikonal equation is recognized as a fundamental tool for analyzing wave propagation in diverse cases, from optics and acoustics to seismology and materials science.
+The eikonal equation is a nonlinear first-order partial differential equation (PDE) that describes how wavefronts propagate through a medium. Its origins go back to the 19th century, when Sir William Rowan Hamilton developed a new framework for geometrical optics. Hamilton introduced the concept of a <i>Point Characteristic Function</i>[^1] which represents the optical path length of a ray between two points on chosen surfaces. These functions are direct precursors to what would later be termed as eikonal by Ernst Heinrich Bruns (1895). Today, the eikonal equation is recognized as a fundamental tool for analyzing wave propagation in diverse cases, from optics and acoustics to seismology and materials science.
 
 ---
 
