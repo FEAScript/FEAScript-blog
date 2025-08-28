@@ -29,6 +29,7 @@ baseurl: ""
 url: "https://blog.feascript.com"
 github_username: FEAScript
 youtube_username: "@FEAScript"
+linkedin_username: feascript
 
 # Build settings
 theme: minima
