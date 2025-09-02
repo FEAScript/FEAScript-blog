@@ -8,7 +8,7 @@ tags: [FEAScript, FEM, Galerkin, Numerical Methods, JavaScript]
 
 ## A Heretical Statement
 
-Scientific computing has long been the domain of performance-heavy languages like C++ and Fortran. More recently, Python has gained traction, particularly in statistical analysis and machine learning. Yet, when it comes to computationally demanding tasks like finite element analysis (FEM), C++ and Fortran remain the standard.
+Scientific computing has long been the domain of performance-heavy languages like C++ and Fortran. More recently, Python has gained traction, particularly in statistical analysis and machine learning. Yet, when it comes to computationally demanding tasks like finite element analysis (FEA), C++ and Fortran remain the standard.
 
 But what if JavaScript—a language originally designed for web development—could challenge this norm? At first glance, the idea sounds almost heretical. Can JavaScript truly handle scientific computing? Let's break it down from the ground up.
 
