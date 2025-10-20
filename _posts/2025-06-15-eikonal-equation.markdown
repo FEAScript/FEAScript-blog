@@ -34,7 +34,7 @@ where the small parameter \\(\varepsilon\\) enforces smoothness. As \\(\varepsil
 
 ## Implementation with FEAScript
 
-As a demonstration, consider the [solidification front propagation example](https://feascript.com/tutorials/SolidificationFront2D.html). Here, the eikonal equation governs the motion of a solidification interface during processes such as metal cooling. The interface propagates with a speed determined by the material properties (described by the slowness field \\(f(\mathbf{x})\\)). By solving the eikonal equation numerically with vanishing viscosity in FEAScript, we can visualize how the interface evolves over time. For improved browser performance, you can also try the [web worker implementation](https://feascript.com/tutorials/SolidificationFront2DWorker.html) which performs the calculations in a separate thread.
+As a demonstration, consider the [solidification front propagation example](https://feascript.com/tutorials/solidification-front-2d.html). Here, the eikonal equation governs the motion of a solidification interface during processes such as metal cooling. The interface propagates with a speed determined by the material properties (described by the slowness field \\(f(\mathbf{x})\\)). By solving the eikonal equation numerically with vanishing viscosity in FEAScript, we can visualize how the interface evolves over time. For improved browser performance, you can also try the [web worker implementation](https://feascript.com/tutorials/solidification-front-2d-worker.html) which performs the calculations in a separate thread.
 
 This example highlights how a seemingly abstract PDE translates directly into a materials science application, showing FEAScript's versatility for modeling complex physical processes in JavaScript.
 
