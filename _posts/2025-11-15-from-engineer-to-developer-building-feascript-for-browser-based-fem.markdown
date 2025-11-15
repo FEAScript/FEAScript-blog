@@ -28,7 +28,7 @@ So, what was the solution? Have you heard the phrase, “_If you want peace, pre
 
 Of course, I’m not a freshman in software development—I’ve been coding throughout my PhD (I’ve always had an inclination toward programming). But I mostly worked in “_engineering languages_” like C++ and Fortran. Creating software in these languages is super fast—I know—but it didn’t solve my problem. For this, I needed something notorious, something engineers love to hate: JavaScript!
 
-JavaScript can solve the dependency problem since it runs in the browser, right? But wait a minute—building a Finite Element solver in JavaScript? That’s crazy, right? It’s slow, right? It’s a disaster, right? **Right?**
+JavaScript can solve the dependency problem since it runs in the browser, right? But wait a minute—building a Finite Element solver in JavaScript? That’s crazy, right? It’s slow, right? It’s a disaster, right? **Right?** 😨
 
 ---
 
@@ -54,7 +54,7 @@ You can generate meshes using an in-house mesher (currently for simple cases), o
 
 For solving linear systems, FEAScript supports LU decomposition (adapted from [math.js](https://mathjs.org/)) and an in-house Frontal solver. For nonlinear systems, you can use the Newton-Raphson method.
 
-(Many more features are also included. Check the resources if you want to dive deeper - Hint: FEAScript is not as slow as a C++ developer might think, thanks to V8).
+(Many more features are also included. Check the resources if you want to dive deeper - Hint: FEAScript is not as slow as a C++ developer might think, thanks to V8 🙏).
 
 And what does it need? It just **needs your help**!
 
@@ -64,11 +64,11 @@ And what does it need? It just **needs your help**!
 
 When I tagged my repository for Hacktoberfest, I honestly didn’t believe anyone would want to contribute. Not because I doubted the value of my project, but because Finite Elements is a niche topic. But luckily, reality proved me wrong!
 
-I’d describe these contributors as “_navigator explorers_”—and that’s impressive. They want to contribute even though they might not know much about Finite Elements, or how difficult it can be to understand the whole codebase that’s (hmm) still not ideally written.
+I’d describe these contributors as “_navigator explorers_”—and that’s impressive. They want to contribute even though they might not know much about Finite Elements, or how difficult it can be to understand the whole codebase that’s (hmm) still not ideally written. 🙂
 
 I’ve had the honor of receiving contributions from such brave people, and that’s the beauty of open-source: they don’t have to fully understand the entire code. They can build a small piece—something necessary for the rest of the project, yet independent of it.
 
-That’s beautiful to my eyes. **Thank you**
+That’s beautiful to my eyes. **Thank you** ❤️
 
 ---
 
@@ -77,10 +77,10 @@ That’s beautiful to my eyes. **Thank you**
 Wow, thanks for reading this far! So, what’s next?
 
 Want to learn more about the project?  
-Visit the [website](https://feascript.com/)
+👉 Visit the [website](https://feascript.com/)
 
 Want to contribute?  
-Check out the [repository](https://github.com/FEAScript/FEAScript-core)
+💻 Check out the [repository](https://github.com/FEAScript/FEAScript-core)
 
 Want to support the project?  
-Donate via [GitHub sponsors](https://github.com/sponsors/FEAScript) or [Liberapay](https://liberapay.com/FEAScript/donate)
+❤️ Donate via [GitHub sponsors](https://github.com/sponsors/FEAScript) or [Liberapay](https://liberapay.com/FEAScript/donate)
