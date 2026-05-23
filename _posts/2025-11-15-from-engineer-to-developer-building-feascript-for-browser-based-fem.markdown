@@ -22,7 +22,7 @@ Engineers hate installing software. As a chemical engineer myself, I’ve learne
 
 In many cases in my work, I’ve faced challenges such as this:
 
-I wanted to develop a web application for a customer that would solve a system of equations using Finite Element Method, or FEM, (the method I know best). But I wanted to deliver it dependency-free. I didn’t want to tell the customer, “_Hey, here’s the web app, but you’ll need to install this and that._” These people don’t have time for that. I wanted it to be easy for them—and I wanted it to be free (or as low-cost as possible).
+I wanted to develop a web application for a customer that would solve a system of equations using Finite Element Method, or FEM, (the method I know best). But I wanted to deliver it dependency-free. I didn’t want to tell the customer, “_Hey, here’s the web app, but you’ll need to install this and that._” These people don’t have time for that. I wanted it to be easy for them and I wanted it to be free (or as low-cost as possible).
 
 So, what was the solution? Have you heard the phrase, “_If you want peace, prepare for war_”? That’s exactly what I did. To avoid dependencies and incompatibilities, I dove deep into programming to build my own library.
 
@@ -48,7 +48,7 @@ The project has improved a lot since its beginning in 2023—and I’ve improved
 
 So what can FEAScript offer up to now?
 
-Using its API, you can run simulations for heat conduction, front propagation, or even solve a general-form partial differential equation. And you can do all of this directly in your browser (for web apps), in a Node.js environment, or on interactive JavaScript notebooks such as [Scribber](https://scribbler.live/).
+Using its API, you can run simulations for heat conduction, front propagation, or even solve a general-form partial differential equation. And you can do all of this directly in your browser (for web apps), in a Node.js environment, or on interactive JavaScript notebooks such as [Scribbler](https://scribbler.live/).
 
 You can generate meshes using an in-house mesher (currently for simple cases), or import more advanced meshes created in [Gmsh](https://gmsh.info/doc/texinfo/gmsh.html).
 
