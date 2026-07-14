@@ -7,7 +7,7 @@ tags: [FEAScript, FEM, Galerkin, Numerical Methods, JavaScript]
 mathjax: false
 ---
 
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 _Originally posted on dev.to: [From Engineer to Developer: Building FEAScript for Browser-Based FEM](https://dev.to/nikoscham/from-engineer-to-developer-building-feascript-for-browser-based-fem-3cf6)_

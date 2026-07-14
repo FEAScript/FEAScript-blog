@@ -7,7 +7,7 @@ tags: [FEAScript, FEM, Galerkin, Numerical Methods, JavaScript]
 mathjax: true
 ---
 
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 ## Introduction to the Eikonal Equation
@@ -51,6 +51,9 @@ Eikonal's nonlinear nature and its inherent presence of singularities make, howe
 ## References
 
 [^1]: J. Rubinstein, G. Wolansky. "Eikonal functions: Old and new." A Celebration of Mathematical Modeling: The Joseph B. Keller Anniversary Volume, Springer Netherlands, Dordrecht, 2004.
+
 [^2]: J. A. Sethian. "A fast marching level set method for monotonically advancing fronts." Proceedings of the National Academy of Sciences, 93.4 (1996): 1591-1595.
+
 [^3]: J. Miao. "Viscosity solutions of the eikonal equations." The University of Chicago, 2020.
+
 [^4]: Y. Yang, W. Hao, Y.-T. Zhang. "A continuous finite element method with homotopy vanishing viscosity for solving the static eikonal equation." Communications in Computational Physics, 31.5 (2022): 1402-1433.
