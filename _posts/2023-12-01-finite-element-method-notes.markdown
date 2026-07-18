@@ -7,7 +7,7 @@ tags: [FEAScript, FEM, Galerkin, Numerical Methods, JavaScript]
 mathjax: true
 ---
 
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 The finite element method is a discretization technique that can utilize a computational mesh to approximate the solution of a partial differential equation. Basic concepts of the finite element method are described below.
