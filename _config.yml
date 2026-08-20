@@ -22,14 +22,13 @@ title: FEAScript Blog
 author: Nikos Chamakos
 email: nikoscham@gmail.com
 description: >-
-  FEAScript is a lightweight finite element simulation library 
-  built in JavaScript for creating client-side, browser-based simulations
-  for physics and engineering problems.
+  FEAScript is a finite element simulation library developed in JavaScript
 baseurl: ""
 url: "https://blog.feascript.com"
 github_username: FEAScript
 youtube_username: "@FEAScript"
 linkedin_username: feascript
+# discord_invite_url: "https://discord.com/invite/3DVjNcuW4f"
 
 # Build settings
 theme: minima
