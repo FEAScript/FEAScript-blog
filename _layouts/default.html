@@ -21,6 +21,39 @@
     /* Hide RSS subscribe line */
     .rss-subscribe { display: none; }
 
+    .footer-wordmark {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.05em;
+      margin-bottom: 0.75rem;
+      color: #1d1d1d;
+      font-size: 1.5rem;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      text-decoration: none;
+    }
+    .footer-wordmark:hover {
+      color: #1d1d1d;
+      opacity: 0.7;
+      text-decoration: none;
+    }
+    .footer-wordmark > svg {
+      display: block;
+      width: 0.72em;
+      height: 0.72em;
+    }
+    .footer-wordmark .wm-t {
+      display: inline;
+      width: 0.3em;
+      height: 1.15em;
+      margin: 0 0 -0.32em 0.02em;
+      vertical-align: -0.16em;
+    }
+    .footer-description {
+      max-width: 22rem;
+    }
+
     /* Footer bottom line, same as feascript.com */
     .footer-bottom {
       display: flex;
@@ -77,12 +110,21 @@
 
         <div class="footer-col footer-col-3">
           <p>
-            <a href="https://feascript.com/">
-              <img src="https://feascript.github.io/FEAScript-website/assets/feascript-logo.png" alt="FEAScript Logo" class="footer-logo" style="width: 40px; height: auto;">
+            <a class="footer-wordmark" href="https://feascript.com/" aria-label="FEAScript website">
+              <svg viewBox="14 79 242 242" aria-hidden="true">
+                <polygon points="17,254 190,82 253,317" fill="#d4aa00" />
+              </svg>
+              <span>
+                FEAScrip
+                <svg class="wm-t" viewBox="0 0 30 115" fill="none" stroke="currentColor" aria-hidden="true">
+                  <path stroke-width="5.9" d="M15 0V100A11.4 11.4 0 0 0 26.4 111.4H29.5" />
+                  <path stroke-width="5.4" d="M0.4 16.9H29.6" />
+                </svg>
+              </span>
             </a>
           </p>
           <p>
-            {{ site.description | escape }}
+            <span class="footer-description">{{ site.description | escape }}</span>
           </p>
         </div>
 
