@@ -10,7 +10,4 @@ permalink: /about/
 
 ## License
 
-FEAScript is released under the [MIT license](https://github.com/FEAScript/FEAScript-core/blob/main/LICENSE). This blog is licensed under a
-<a href="https://github.com/FEAScript/FEAScript-blog/blob/main/LICENSE" target="_blank"
-        >Creative Commons Attribution 4.0 license</a
-      >.
+FEAScript is released under the [MIT license](https://github.com/FEAScript/FEAScript-core/blob/main/LICENSE). This blog is licensed under a [Creative Commons Attribution 4.0 license](https://github.com/FEAScript/FEAScript-blog/blob/main/LICENSE).

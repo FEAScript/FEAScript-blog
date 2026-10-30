@@ -30,6 +30,14 @@ youtube_username: "@FEAScript"
 linkedin_username: feascript
 # discord_invite_url: "https://discord.com/invite/3DVjNcuW4f"
 
+# Default byline for posts (override per post with `author:` in front matter)
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      author: Nikos Chamakos
+
 # Build settings
 theme: minima
 plugins:
