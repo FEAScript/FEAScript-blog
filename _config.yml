@@ -43,6 +43,11 @@ defaults:
 theme: minima
 plugins:
   - jekyll-feed
+
+# NOTICE.md has no front matter: use its heading as the page title, without repeating it
+titles_from_headings:
+  strip_title: true
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
