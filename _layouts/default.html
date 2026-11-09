@@ -189,6 +189,12 @@
       letter-spacing: 0.04em;
       color: var(--faint);
     }
+    .footer-bottom a {
+      color: var(--muted);
+    }
+    .footer-bottom a:hover {
+      color: var(--ink-strong);
+    }
 
     /* Footer icons: the assets/icon-<name>.svg files of the website (brand marks from Simple Icons, CC0), drawn as
        masks in the gold accent, to the left of each link */
@@ -333,7 +339,7 @@
       </div>
 
       <div class="footer-bottom">
-        <span>&#169; 2023-{{ "now" | date: "%Y" }} FEAScript</span>
+        <span>&#169; 2023-{{ "now" | date: "%Y" }} FEAScript &middot; <a href="https://feascript.com/privacy.html">Privacy</a></span>
         <span>Core: MIT license &middot; Blog: CC BY 4.0</span>
       </div>
     </div>
